@@ -1,17 +1,13 @@
-# This is a sample Python script.
+def encode(password):
+    _list = []
+    for i in password:
+        i = int(i)
+        i = i +3
+        _list.append(i)
+    s = ' '
+    result= s.join(_list)
+    return result
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-#This is the new commit sir
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print(encode("12345555"))
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
